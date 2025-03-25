@@ -1,0 +1,51 @@
+<!-- quests.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quests</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="ne3.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container text-center">
+        <div class="system-box mt-5">
+            <h2>Daily Quest</h2>
+            <p>Level: <span id="level">1</span></p>
+            <p>XP: <span id="xp">0</span>/100</p>
+            <p>HP: <span id="hp">100</span>/100</p>
+            
+            <h3>Tasks</h3>
+            <div class="task">
+                <label>
+                    <input type="checkbox" id="pushups" onclick="completeTask('pushups', 5)"> Push-ups (<span id="pushup-count">10</span>)
+                </label>
+            </div>
+            <div class="task">
+                <label>
+                    <input type="checkbox" id="pullups" onclick="completeTask('pullups', 7)"> Pull-ups (<span id="pullup-count">10</span>)
+                </label>
+            </div>
+            <div class="task">
+                <label>
+                    <input type="checkbox" id="running" onclick="completeTask('running', 10)"> Running (<span id="running-count">1</span> km)
+                </label>
+            </div>
+            <br>
+            <a href="new2.html" class="btn btn-secondary">Back to Home</a>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <h3 id="popup-title"></h3>
+        <p id="popup-message"></p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+    <script src="ne3.js"></script>
+
+
+    
+</body>
+</html>
